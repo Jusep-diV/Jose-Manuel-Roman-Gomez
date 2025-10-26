@@ -7,6 +7,8 @@ import 'screens/icon_rows_screen.dart';
 import 'screens/image_columns_screen.dart';
 import 'screens/text_styles_screen.dart';
 import 'screens/repeated_images_screen.dart';
+import 'screens/responsive_images_screen.dart';
+
 
 
 void main() {
@@ -35,6 +37,7 @@ class MyApp extends StatelessWidget {
         '/image_columns': (context) => const ImageColumnsScreen(),
         '/text_styles': (context) => const TextStylesScreen(),
         '/repeated_images': (context) => const RepeatedImagesScreen(),
+        '/responsive_images': (context) => const ResponsiveImagesScreen(),
       },
     );
   }

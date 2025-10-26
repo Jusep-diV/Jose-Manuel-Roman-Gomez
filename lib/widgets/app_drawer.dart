@@ -64,6 +64,11 @@ class AppDrawer extends StatelessWidget {
               title: const Text('Imágenes Repetidas'),
               onTap: () => _go(context, '/repeated_images'),
             ),
+            ListTile(
+            leading: const Icon(Icons.phone_android),
+            title: const Text('Fotos Pirámide'),
+            onTap: () => _go(context, '/responsive_images'),
+            ),
 
           ],
         ),
