@@ -8,6 +8,10 @@ import 'screens/image_columns_screen.dart';
 import 'screens/text_styles_screen.dart';
 import 'screens/repeated_images_screen.dart';
 import 'screens/responsive_images_screen.dart';
+import 'screens/counter_screen.dart';
+import 'screens/instagram_screen.dart';
+
+
 
 
 
@@ -38,6 +42,8 @@ class MyApp extends StatelessWidget {
         '/text_styles': (context) => const TextStylesScreen(),
         '/repeated_images': (context) => const RepeatedImagesScreen(),
         '/responsive_images': (context) => const ResponsiveImagesScreen(),
+        '/counter': (context) => const CounterScreen(),
+        '/instagram': (context) => const InstagramProfileScreen(),
       },
     );
   }

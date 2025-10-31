@@ -69,6 +69,16 @@ class AppDrawer extends StatelessWidget {
             title: const Text('Fotos Pirámide'),
             onTap: () => _go(context, '/responsive_images'),
             ),
+            ListTile(
+              leading: const Icon(Icons.exposure_plus_1),
+              title: const Text('Contador'),
+              onTap: () => _go(context, '/counter'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.camera_alt_outlined),
+              title: const Text('Perfil Instagram'),
+              onTap: () => _go(context, '/instagram'),
+            ),
 
           ],
         ),
