@@ -31,8 +31,8 @@ class AppDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.star),
-              title: const Text('Nombre y Repositorio'),
-              onTap: () => _go(context, '/name_repo'),
+              title: const Text('Inicio'),
+              onTap: () => _go(context, '/'),
             ),
             ListTile(
               leading: const Icon(Icons.movie),
@@ -79,7 +79,11 @@ class AppDrawer extends StatelessWidget {
               title: const Text('Perfil Instagram'),
               onTap: () => _go(context, '/instagram'),
             ),
-
+            ListTile(
+              leading: const Icon(Icons.videogame_asset),
+              title: const Text('Juego de imagenes'),
+              onTap: () => _go(context, '/random_tap_game'),
+            ),
           ],
         ),
       ),

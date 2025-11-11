@@ -1,19 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'screens/name_repo_screen.dart';
-import 'screens/profile_screen.dart';
-import 'screens/thumbs3_screen.dart';
-import 'screens/icon_rows_screen.dart';
-import 'screens/image_columns_screen.dart';
-import 'screens/text_styles_screen.dart';
-import 'screens/repeated_images_screen.dart';
-import 'screens/responsive_images_screen.dart';
-import 'screens/counter_screen.dart';
-import 'screens/instagram_screen.dart';
-
-
-
-
+import 'screens/screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/name_repo',
       routes: {
-        '/name_repo': (context) => const NameRepoScreen(),
+        '/name_repo': (context) => const HomeScreen(),
         '/profile': (context) => const ProfileScreen(),
         '/thumbs3': (context) => const Thumbs3Screen(),
         '/icon_rows': (context) => const IconRowsScreen(),
@@ -44,6 +31,8 @@ class MyApp extends StatelessWidget {
         '/responsive_images': (context) => const ResponsiveImagesScreen(),
         '/counter': (context) => const CounterScreen(),
         '/instagram': (context) => const InstagramProfileScreen(),
+        '/random_tap_game': (context) => const RandomTapGameScreen(),
+
       },
     );
   }

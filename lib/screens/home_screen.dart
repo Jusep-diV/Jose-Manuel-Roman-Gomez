@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../widgets/app_drawer.dart';
 
-class NameRepoScreen extends StatelessWidget {
-  const NameRepoScreen({super.key});
+class HomeScreen  extends StatelessWidget {
+  const HomeScreen ({super.key});
   final String fullName = 'Jose Manuel Román Gómez';
   final String repoUrl  = 'https://github.com/Jusep-diV/flutter_app';
 
