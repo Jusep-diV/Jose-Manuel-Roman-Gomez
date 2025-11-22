@@ -9,4 +9,5 @@ export 'responsive_images_screen.dart';
 export 'counter_screen.dart';
 export 'instagram_screen.dart';
 export 'random_tap_game_screen.dart';
-
+export 'challenge_screen.dart';
+export 'splash_screen.dart';

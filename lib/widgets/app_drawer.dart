@@ -4,7 +4,7 @@ class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
 
   void _go(BuildContext context, String route) {
-    Navigator.pop(context); // cierra el drawer
+    Navigator.pop(context);
     final current = ModalRoute.of(context)?.settings.name;
     if (current != route) {
       Navigator.pushReplacementNamed(context, route);
@@ -63,6 +63,11 @@ class AppDrawer extends StatelessWidget {
               leading: const Icon(Icons.image_outlined),
               title: const Text('Imágenes Repetidas'),
               onTap: () => _go(context, '/repeated_images'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.flash_on),
+              title: const Text('Challenge'),
+              onTap: () => _go(context, '/challenge'),
             ),
             ListTile(
             leading: const Icon(Icons.phone_android),

@@ -3,7 +3,6 @@ import '../widgets/app_drawer.dart';
 
 class RepeatedImagesScreen extends StatelessWidget {
   const RepeatedImagesScreen({super.key});
-  //una imagen de assets y otra de internet
   @override
   Widget build(BuildContext context) {
     const localImage = 'assets/images/img_1.jpg'; 
@@ -23,7 +22,7 @@ class RepeatedImagesScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset(localImage, width: 160, height: 160, fit: BoxFit.cover),
+                Image.asset(localImage, width: 140, height: 140, fit: BoxFit.cover),
               ],
             ),
             const SizedBox(height: 16),
@@ -31,9 +30,9 @@ class RepeatedImagesScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.network(networkImage, width: 160, height: 160, fit: BoxFit.cover),
+                Image.network(networkImage, width: 140, height: 140, fit: BoxFit.cover),
                 const SizedBox(width: 12),
-                Image.asset(localImage, width: 160, height: 160, fit: BoxFit.cover),
+                Image.asset(localImage, width: 140, height: 140, fit: BoxFit.cover),
               ],
             ),
             const SizedBox(height: 16),
@@ -41,11 +40,11 @@ class RepeatedImagesScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.network(networkImage, width: 160, height: 160, fit: BoxFit.cover),
+                Image.network(networkImage, width: 140, height: 140, fit: BoxFit.cover),
                 const SizedBox(width: 12),
-                Image.asset(localImage, width: 160, height: 160, fit: BoxFit.cover),
+                Image.asset(localImage, width: 140, height: 140, fit: BoxFit.cover),
                 const SizedBox(width: 12),
-                Image.network(networkImage, width: 160, height: 160, fit: BoxFit.cover),
+                Image.network(networkImage, width: 140, height: 140, fit: BoxFit.cover),
               ],
             ),
           ],

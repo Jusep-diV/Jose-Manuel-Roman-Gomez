@@ -24,7 +24,6 @@ class InstagramProfileScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
         elevation: 0,
         title: const Text(
           'Jose_Manuel_Dev',

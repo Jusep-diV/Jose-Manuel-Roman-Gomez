@@ -29,7 +29,6 @@ class ResponsiveImagesScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Generar 3 filas: 1, 2 y 3 imágenes centradas (pirámide)
                   _buildCenteredRow([images[0]], imageSize),
                   const SizedBox(height: 20),
                   _buildCenteredRow([images[1], images[2]], imageSize),
@@ -45,7 +44,7 @@ class ResponsiveImagesScreen extends StatelessWidget {
   }
   Widget _buildCenteredRow(List<String> imagePaths, double imageSize) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center, // 👈 Centrado total
+      mainAxisAlignment: MainAxisAlignment.center,
       children: imagePaths
           .map(
             (path) => Padding(

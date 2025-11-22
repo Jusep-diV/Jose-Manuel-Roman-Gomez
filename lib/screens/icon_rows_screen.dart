@@ -6,29 +6,36 @@ class IconRowsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = const [
-      (Icons.home_outlined, 'Inicio'),
-      (Icons.phone_iphone, 'Móvil'),
-      (Icons.email_outlined, 'Correo'),
-      (Icons.map_outlined, 'Mapa'),
-      (Icons.settings_outlined, 'Ajustes'),
+    final icons = const [
+      Icons.home_outlined,
+      Icons.phone_iphone,
+      Icons.email_outlined,
+      Icons.map_outlined,
+      Icons.settings_outlined,
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text('5 iconos en filas')),
+      appBar: AppBar(title: const Text('Iconos en fila')),
       drawer: const AppDrawer(),
-      body: ListView.separated(
-        padding: const EdgeInsets.all(12),
-        itemCount: items.length,
-        separatorBuilder: (_, __) => const Divider(height: 1),
-        itemBuilder: (context, i) {
-          final (icon, label) = items[i];
-          return ListTile(
-            leading: Icon(icon),
-            title: Text(label),
-            trailing: const Icon(Icons.chevron_right),
-          );
-        },
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: icons.map((icon) {
+            return Container(
+              width: 70,
+              height: 70,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.blue.shade100,
+              ),
+              child: Icon(
+                icon,
+                size: 35,
+                color: Colors.blue.shade700,
+              ),
+            );
+          }).toList(),
+        ),
       ),
     );
   }
